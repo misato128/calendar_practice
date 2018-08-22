@@ -26,13 +26,13 @@ def delete
   end
 end
 
-def put
-  if @schedule = Schedule.find(params[:id])
-   @schedule.update
+def update
+  if  @schedule = Schedule.find(params[:id])
+   @schedule.update(schedule_params)
    render json: @schedule
- else
-   render json: "data not found"
- end
+  else
+    render json: "data not found"
+  end
 end
 
 

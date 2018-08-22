@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 post "/schedule" => "schedule#save"
 get "/schedule" => "schedule#index"
 delete "/schedule" => "schedule#delete"
-put "/schedule" => "schedule#put"
+put "/schedule" => "schedule#update"
 
 
 
